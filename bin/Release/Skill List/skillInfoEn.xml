@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<skillList>
+	<skill>
+		<name>集中力</name>
+		<trName>Focus</trName>
+		<trDescription>Improve Starts, slightly decreases delay of Late Starts</trDescription>
+		<trCondition>Occurs at the start of the race</trCondition>
+	</skill>
+	<skill>
+		<name>コンセントレーション</name>
+		<trName>Concentration</trName>
+		<trDescription>Improve Starts, decreases delay of Late Starts</trDescription>
+		<trCondition>Occurs at the start of the race</trCondition>
+	</skill>
+	<skill>
+		<name>仕掛け準備</name>
+		<trName>Calculated Preparations</trName>
+		<trDescription>Get a bit more prepared for the goal line during the Middle Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>イナズマステップ</name>
+		<trName>Inazuma Step</trName>
+		<trDescription>Become lightly harder to box in if behind in Middle Leg &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Random occurs during the Middle Leg if placed in the lower 50%</trCondition>
+	</skill>
+	<skill>
+		<name>ライトニングステップ</name>
+		<trName>Lightning Step</trName>
+		<trDescription>Become harder to box in if behind in Middle Leg &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Random occurs during the Middle Leg if placed in the lower 50%</trCondition>
+	</skill>
+	<skill>
+		<name>ポジションセンス</name>
+		<trName>Position Sense</trName>
+		<trDescription>Become a little better at taking position during the Opening Leg of the race</trDescription>
+		<trCondition>Randomly occurs during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>注目の踊り子</name>
+		<trName>Star of the Show</trName>
+		<trDescription>Become better at taking a good track position during the Opening Leg</trDescription>
+		<trCondition>Randomly occurs during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>臨機応変</name>
+		<trName>Improvise</trName>
+		<trDescription>Become a little better at positioning during the Final Leg of the race</trDescription>
+		<trCondition>Randomly occurs during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>レーンの魔術師</name>
+		<trName>Magician of the Lane</trName>
+		<trDescription>Become a little better at positioning during the Final Leg of the race</trDescription>
+		<trCondition>Randomly occurs during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>危険回避</name>
+		<trName>Danger Avoidance</trName>
+		<trDescription>Become a bit harder to surround in Opening Leg &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ホークアイ</name>
+		<trName>Hawkeye</trName>
+		<trDescription>Lightly sharpens observation skills during the Opening Leg, widening field of vision &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>千里眼</name>
+		<trName>Clairvoyance</trName>
+		<trDescription>Sharpens observation skills during the Opening Leg, widening field of vision &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>読解力</name>
+		<trName>Reading Comprehension</trName>
+		<trDescription>Slightly sharpens observation skills during the Middle Leg, widening field of vision a little &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>大局観</name>
+		<trName>Seeing The Big Picture</trName>
+		<trDescription>Sharpens observation skills in Middle Leg, widening field of vision a little &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>策士</name>
+		<trName>Tactician</trName>
+		<trDescription>Slightly widens field of vision when behind in Final Leg &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Randomly occurs during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>お見通し</name>
+		<trName>See Right Through</trName>
+		<trDescription>Grasp the situation when moving left-right, slightly widening field of vision &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Occurs when moving left or right</trCondition>
+	</skill>
+	<skill>
+		<name>視界良好！異常なし！</name>
+		<trName>Good Visibility! All Clear!</trName>
+		<trDescription>Grasp the situation when moving left-right, lightly widening field of vision &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Occurs when moving left or right</trCondition>
+	</skill>
+	<skill>
+		<name>短距離直線</name>
+		<trName>Short Distance Straights</trName>
+		<trDescription>Lightly increases speed on straights &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs in the stright course</trCondition>
+	</skill>
+	<skill>
+		<name>短距離コーナー</name>
+		<trName>Short Distance Corners</trName>
+		<trDescription>Lightly increases speed on corners &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>大きなリード</name>
+		<trName>Big Lead</trName>
+		<trDescription>Slightly easier to keep the lead if you lead with big margin in the Middle Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Occurs when in the lead by more than 5 bashin and is in the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>圧倒的リード</name>
+		<trName>Overwhelming Lead</trName>
+		<trDescription>Easier to keep the lead if you lead with big margin in the Middle Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Occurs when in the lead by more than 5 bashin and is in the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>詰め寄り</name>
+		<trName>Draw Forward</trName>
+		<trDescription>Spurts become slightly easier when in the back of the pack during the Final Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the lower half and is in the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>電撃の煌めき</name>
+		<trName>Glimmer of Shock</trName>
+		<trDescription>Spurts become easier when in the back of the pack during the Final Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the lower half and is in the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>マイル直線</name>
+		<trName>Mile Straights</trName>
+		<trDescription>Lightly increases speed on straights &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs in the stright course</trCondition>
+	</skill>
+	<skill>
+		<name>マイルコーナー</name>
+		<trName>Mile Corner</trName>
+		<trDescription>Lightly ncreases speed on corners &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>積極策</name>
+		<trName>Positive Planning</trName>
+		<trDescription>When in the lead in Opening Leg, extending the lead becomes a little easier &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs when in the lead during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>マイルの支配者</name>
+		<trName>Ruler of Mile</trName>
+		<trDescription>When in the lead in Opening Leg, extending the lead becomes easier &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs when in the lead during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ギアシフト</name>
+		<trName>Shift Gears</trName>
+		<trDescription>Passing becomes slightly easier if you're in front in Middle Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ギアチェンジ</name>
+		<trName>Gear Change</trName>
+		<trDescription>Passing becomes easier if you're in front in Middle Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>負けん気</name>
+		<trName>Rival Spirit</trName>
+		<trDescription>Passing becomes slightly easier to succeed &#60;Mile&#62;</trDescription>
+		<trCondition>Occurs when the distance with the umamusume in front is close</trCondition>
+	</skill>
+	<skill>
+		<name>中距離直線</name>
+		<trName>Medium Distance Straights</trName>
+		<trDescription>Lightly increases speed on straights &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Randomly occurs in the stright course</trCondition>
+	</skill>
+	<skill>
+		<name>中距離コーナー</name>
+		<trName>Medium Distance Corner</trName>
+		<trDescription>Increases speed on corners &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>テンポアップ</name>
+		<trName>Uptempo</trName>
+		<trDescription>Slightly easier to take a good position during the Middle Leg if you're leading &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>キラーチューン</name>
+		<trName>Killer Tune</trName>
+		<trDescription>Easier to take a good position in the Middle Leg if you're leading &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>食い下がり</name>
+		<trName>Stand Your Ground</trName>
+		<trDescription>When overtaken in the Final Leg, retaking your place becomes slightly easier &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Occurs when overtaken during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>勝利への執念</name>
+		<trName>To Victory!</trName>
+		<trDescription>When overtaken in the Final Leg, retaking your place becomes easier &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Occurs when overtaken during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>長距離直線</name>
+		<trName>Long Distance Straight</trName>
+		<trDescription>Lightly increases speed on straights &#60;Long Distance&#62;</trDescription>
+		<trCondition>Randomly occurs in the stright course</trCondition>
+	</skill>
+	<skill>
+		<name>長距離コーナー</name>
+		<trName>Long Distance Corner</trName>
+		<trDescription>Lightly increases speed on corners &#60;Long Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>リードキープ</name>
+		<trName>Keep the Lead</trName>
+		<trDescription>Slightly easier to keep the lead if you lead with big margin in the Middle Leg &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when the distance with the umamusume behind is more than 3 bashin, is in the lead, and is in the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>先陣の心得</name>
+		<trName>Vanguard's Wisdom</trName>
+		<trDescription>Easier to keep the lead if you lead with big margin in the Middle Leg &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when the distance with the umamusume behind is more than 3 bashin, is in the lead, and is in the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>追い上げ</name>
+		<trName>Press the Attack</trName>
+		<trDescription>Slightly increases speed when passing in the Final Leg &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when overtaken during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>内弁慶</name>
+		<trName>King of the Castle</trName>
+		<trDescription>Slightly increases speed when near the inner fence during the Final Leg &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when near the inner fence during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>急ぎ足</name>
+		<trName>Fast Paced</trName>
+		<trDescription>Going forwards during the Middle Leg becomes slightly easier &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>脱出術</name>
+		<trName>Escape Artist</trName>
+		<trDescription>Going forwards during the Middle Leg becomes easier &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>逃げ直線</name>
+		<trName>Runner's Straight</trName>
+		<trDescription>Lightly increases speed on straights &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>逃げコーナー</name>
+		<trName>Runner's Corner</trName>
+		<trDescription>Lightly increases speed on corners &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>先頭プライド</name>
+		<trName>Lead Pride</trName>
+		<trDescription>Become slightly harder to pass in the Opening Leg &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Occurs when overtaken during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>先行直線</name>
+		<trName>Leader's Straights</trName>
+		<trDescription>Lightly increases speed on straights &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>先行コーナー</name>
+		<trName>Leaders Corner</trName>
+		<trDescription>Lightly increases speed on corners &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>抜け出し準備</name>
+		<trName>Passing Preparations</trName>
+		<trDescription>Passing becomes slightly easier on the Final corner &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>スピードスター</name>
+		<trName>Speed Star</trName>
+		<trDescription>Passing becomes easier on the Final corner &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the upper 50% during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>差し直線</name>
+		<trName>Betweener's Straights</trName>
+		<trDescription>Lightly increases speed on straights &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>差しコーナー</name>
+		<trName>Betweener's Corner</trName>
+		<trDescription>Lightly increases speed on corners &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>位置取り押し上げ</name>
+		<trName>Position Swiper</trName>
+		<trDescription>Slightly increases speed during the Middle Leg &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the lower 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>迅速果断</name>
+		<trName>Fortune Favors the Fast</trName>
+		<trDescription>Increases speed during the Middle Leg &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the lower 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>外差し準備</name>
+		<trName>Outside Pass, Ready!</trName>
+		<trDescription>Slightly increases speed when passing from the outside on the final corner &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Occurs when passing other umamusume during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>昇り龍</name>
+		<trName>Rising Dragon</trName>
+		<trDescription>Increases speed when passing from the outside on the final corner &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Occurs when passing other umamusume during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>十万バリキ</name>
+		<trName>100K Horsepower</trName>
+		<trDescription>Slightly increases speed on uphills &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Occurs when climbing slope</trCondition>
+	</skill>
+	<skill>
+		<name>追込直線</name>
+		<trName>Chasers Straights</trName>
+		<trDescription>Lightly increases speed on straights &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>追込コーナー</name>
+		<trName>Chaser's Corner</trName>
+		<trDescription>Lightly increases speed on corners &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>仕掛け抜群</name>
+		<trName>Master Trickster</trName>
+		<trDescription>Get ready to pass during the Final Leg and become slightly better at positioning &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the lower 25% during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>直線巧者</name>
+		<trName>Straight Skill</trName>
+		<trDescription>Slightly increases speed on straights</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>ハヤテ一文字</name>
+		<trName>Like The Wind</trName>
+		<trDescription>Increases speed on straights</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>コーナー巧者</name>
+		<trName>Clever Cornerer</trName>
+		<trDescription>Become better at corners, slightly increased speed</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>弧線のプロフェッサー</name>
+		<trName>Archline Professor</trName>
+		<trDescription>Become better at corners, increases speed</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>ウマ好み</name>
+		<trName>Big Fan</trName>
+		<trDescription>Slightly increase speed when many girls are nearby</trDescription>
+		<trCondition>Occurs when surrounded by umamusumes</trCondition>
+	</skill>
+	<skill>
+		<name>スリップストリーム</name>
+		<trName>Slipstream</trName>
+		<trDescription>When following right behind a girl, become slightly less affected by wind resistance</trDescription>
+		<trCondition>Occurs when right behind another umamusume</trCondition>
+	</skill>
+	<skill>
+		<name>遊びはおしまいっ！</name>
+		<trName>Playtime's Over!</trName>
+		<trDescription>Slightly increase speed when a girl has been following you for a while</trDescription>
+		<trCondition>Occurs when right behind another umamusume</trCondition>
+	</skill>
+	<skill>
+		<name>ペースアップ</name>
+		<trName>Up The Pace</trName>
+		<trDescription>Slightly increases speed when passing during the Middle Leg</trDescription>
+		<trCondition>Occurs when passing another umamusume during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>末脚</name>
+		<trName>Last Leg</trName>
+		<trDescription>Slightly increases speed at the Last Spurt</trDescription>
+		<trCondition>Randomly occurs during the Last Spurt</trCondition>
+	</skill>
+	<skill>
+		<name>全身全霊</name>
+		<trName>Heart and Soul</trName>
+		<trDescription>Increase Speed during your Last Spurt</trDescription>
+		<trCondition>Randomly occurs during the Last Spurt</trCondition>
+	</skill>
+	<skill>
+		<name>尻尾上がり</name>
+		<trName>Hold Your Tail High</trName>
+		<trDescription>Slightly increase speed if many skills were activated during the Middle Leg</trDescription>
+		<trCondition>Occurs when more than 3 skills gets used during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>シューティングスター</name>
+		<trName>Shooting Star</trName>
+		<trDescription>Overtake the opponent in front of you during the last leg of the race to gain momentum and increase your speed</trDescription>
+		<trCondition>Occurs when passing another umamusume while placed in or less than 2nd place and is placed in upper 50%</trCondition>
+	</skill>
+	<skill>
+		<name>先頭の景色は譲らない…！</name>
+		<trName>I'm not giving up the lead…!</trName>
+		<trDescription>Be in the lead with a gap behind you at the last straight to increase your speed even more through your legs</trDescription>
+		<trCondition>Occurs when in the lead and the distance with the umamusume behind is more than 1 bashin during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>究極テイオーステップ</name>
+		<trName>Ultimate Teio Step</trName>
+		<trDescription>Close down the leader on the final straight to greatly increase your speed even further through your brilliant leg work</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and gets close to the umamusume with more than 1 bashin distance difference during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>勝利の鼓動</name>
+		<trName>The Beat of Victory</trName>
+		<trDescription>Be close to the lead during the last 200m to make it easier to break through and find a way through the field</trDescription>
+		<trCondition>Occurs when placed between 2nd to 5th place, is placed in the upper 50% and the remaining distance is less than 200m</trCondition>
+	</skill>
+	<skill>
+		<name>貴顕の使命を果たすべく</name>
+		<trName>Fulfilling your noble duty</trName>
+		<trDescription>Be close to the lead in the final corner to gain speed as you resolve yourself to not be overtaken</trDescription>
+		<trCondition>Occurs when placed in the upper 30% during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>汝、皇帝の神威を見よ</name>
+		<trName>Thou, witness the heavenly might of the Emperor</trName>
+		<trDescription>During the last leg of the race make three overtakes to strongly increase your speed on the final straight</trDescription>
+		<trCondition>Occurs at the Final Straight Lane if more than 3 umamusumes were overtaken during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ブルーローズチェイサー</name>
+		<trName>Blue Rose Chaser</trName>
+		<trDescription>Break away on the last straight to steel your will and increase your speed</trDescription>
+		<trCondition>Occurs when passing another umamusume while placed in 4th or higher place during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>不沈艦、抜錨ォッ！</name>
+		<trName>Unsinkable ship, anchored!</trName>
+		<trDescription>Gradually increase speed during the long spurt in Middle Leg</trDescription>
+		<trCondition>Occurs when placed in the lower 50% and the remaining distance is 40~50%</trCondition>
+	</skill>
+	<skill>
+		<name>カッティング×DRIVE！</name>
+		<trName>Cutting × DRIVE!</trName>
+		<trDescription>Increase speed and power when close to the lead in last 200m</trDescription>
+		<trCondition>Occurs when placed in or less than 3rd place, placed in upper 50%, the distance with umamusume in front and back is within 1 bashin and the remaining distance is less than 200m</trCondition>
+	</skill>
+	<skill>
+		<name>ブリリアント・レッドエース</name>
+		<trName>Brilliant Red Ace</trName>
+		<trDescription>Display your power in keeping the lead position during the latter half of the race</trDescription>
+		<trCondition>Occurs when in the lead and the distance with the umamusume behind is less than 1 bashin during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>精神一到何事か成らざらん</name>
+		<trName>Where there's a will, there's a way</trName>
+		<trDescription>Increase speed when passing in the back in Final Leg straight</trDescription>
+		<trCondition>Occurs when passing another umamusume while placed in less than 4th during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>プランチャ☆ガナドール</name>
+		<trName>Plancha ☆ Ganador</trName>
+		<trDescription>Easier to keep a good position in last straight with spare energy</trDescription>
+		<trCondition>Occurs when placed in or higher than 2nd place and more than 30% stamina is remaining during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>ブレイズ・オブ・プライド</name>
+		<trName>Blaze of Pride</trName>
+		<trDescription>Increase speed when passing in the back in last corner</trDescription>
+		<trCondition>Occurs when passing another umamusume while placed in or less than 4th place during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>ひらめき☆ランディング</name>
+		<trName>Inspiration ☆ Landing</trName>
+		<trDescription>After a struggle for the lead on the last corner, it becomes easier to break away during the final straight</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and gets surrounded by other umamusumes for more than 2 seconds during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>勝利のチケットを、君にッ！</name>
+		<trName>The ticket to victory, for you!</trName>
+		<trDescription>Your speed increases on the last straight when competing for the lead</trDescription>
+		<trCondition>Occurs when placed in or higher than 5th place and gets surround by other umamusumes for more than 2 seconds during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>優等生×バクシン=大勝利ッ</name>
+		<trName>Honor Student x Bakushin = Big Victory</trName>
+		<trDescription>During the later half of the race, your speed increases when competing for the lead</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and gets srrounded by other umamusumes for more than 2 seconds during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>来ます来てます来させます！</name>
+		<trName>I'm coming, I'm coming, I'm coming!</trName>
+		<trDescription>When the front is packed during the last leg of the race, the oracle's power will open a path</trDescription>
+		<trCondition>Occurs when placed in or less than 3rd place and gets blocked by the umamusume in front during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>きっとその先へ…！</name>
+		<trName>Surely, beyond...!</trName>
+		<trDescription>When you're in 3rd place at the end of the race and about to lose, your speed increases</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and the distance with the umamusume behind is less than 1 bashin during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>Pride of KING</name>
+		<trName>Pride of KING</trName>
+		<trDescription>After proceeding through the race calmly, your speed drastically increases during the last 200m</trDescription>
+		<trCondition>Occurs when 掛かり never occurred during the race, is placed in or less than 5th place, is in upper 60 and the remaining distance less than 200m</trCondition>
+	</skill>
+	<skill>
+		<name>最強の名をかけて</name>
+		<trName>For the Strongest Name</trName>
+		<trDescription>Increase speed after the last corner when stamina runs out being one of the lead</trDescription>
+		<trCondition>Occurs if the remaining stamina is less than 35% from the final corner, is placed in or higher than 3rd place, and the distnace with the umamusume behind is within 1 bashin</trCondition>
+	</skill>
+	<skill>
+		<name>G00 1st.F∞;</name>
+		<trName>G00 1st.F∞;</trName>
+		<trDescription>Lead by yourself without letting up until the final straight to increase your speed</trDescription>
+		<trCondition>Occurs if placed in or higher than 3rd place and 出遅れ and 掛かり status never occured until the final straight lane</trCondition>
+	</skill>
+	<skill>
+		<name>.・.win Q.E.D.</name>
+		<trName>.・. win Q.E.D.</trName>
+		<trDescription>Increase speed when passing in the front of the last corner</trDescription>
+		<trCondition>Occurs if place in or higher than 4th place and pass another umamusume during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>絶対は、ボクだ</name>
+		<trName>It's going to be me</trName>
+		<trDescription>Increase speed in the last straight when chasing someone close to the lead</trDescription>
+		<trCondition>Occurs if placed in or higher than 5th place and gets close to another umamusume for more than 2 seconds during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>ヴィットーリアに捧ぐ舞踏</name>
+		<trName>Dance for Victoria</trName>
+		<trDescription>Fight for the lead at the last corner to increase your speed through your kingly radiance</trDescription>
+		<trCondition>Occurs if placed in or higher than 4th place, the distance with the umamusume in front and behind is less than 1 bashin and struggle with umamusumes on the side for more than 2 seconds during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>スプリントギア</name>
+		<trName>Sprinting Gear</trName>
+		<trDescription>Slightly increases acceleration on straights &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>スプリントターボ</name>
+		<trName>Sprint Turbo</trName>
+		<trDescription>Increases acceleration on straights &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>善後策</name>
+		<trName>Countermeasures</trName>
+		<trDescription>Passing becomes slightly easier when in the front in Middle Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randmly occurs if placed in or less than 2nd place and is placed in upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>プランX</name>
+		<trName>Plan X</trName>
+		<trDescription>Passing becomes easier when in the front in Middle Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randmly occurs if placed in or less than 2nd place and is placed in upper 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>アクセラレーション</name>
+		<trName>Acceleration</trName>
+		<trDescription>Slightly increase acceleration when passing in Middle Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Occurs when passing another uma musume during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>アクセル全開！</name>
+		<trName>Accel Full Throttle!</trName>
+		<trDescription>Increases acceleration when passing in Middle Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Occurs when passing another uma musume during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>上昇気流</name>
+		<trName>Updraft</trName>
+		<trDescription>Slightly increases passing ability when behind in the Final Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs if placed in lower 50% during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>豪脚</name>
+		<trName>Big Strides</trName>
+		<trDescription>Passing ability increases when behind in the Final Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs if placed in lower 50% during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>先駆け</name>
+		<trName>Frontrunner</trName>
+		<trDescription>Moving forwards becomes slightly easier during the Opening Leg &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Occurs at the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>先手必勝</name>
+		<trName>Fortune Favors the Fast</trName>
+		<trDescription>Moving forwards becomes easier during the Opening Leg &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Occurs at the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>二の矢</name>
+		<trName>Next Steps</trName>
+		<trDescription>Slightly increases acceleration behind in Middle Leg &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs when placed in the lower 50% during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>押し切り準備</name>
+		<trName>Press Forward, Ready!</trName>
+		<trDescription>Keeping the lead position on the final corner becomes slightly easier &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs when in the 1st place during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>逃亡者</name>
+		<trName>Runaway</trName>
+		<trDescription>Keeping the lead on the final corner becomes easier &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Randomly occurs when in the 1st place during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>巧みなステップ</name>
+		<trName>Clever Step</trName>
+		<trDescription>Taking position becomes very slightly smoother &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Occurs when moving left or right</trCondition>
+	</skill>
+	<skill>
+		<name>技巧派</name>
+		<trName>Technician</trName>
+		<trDescription>Taking position becomes a bit smoother &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Occurs when moving left or right</trCondition>
+	</skill>
+	<skill>
+		<name>直滑降</name>
+		<trName>Straight Down</trName>
+		<trDescription>Become slightly better at downhills &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Occurs in the downhill course</trCondition>
+	</skill>
+	<skill>
+		<name>決意の直滑降</name>
+		<trName>Straight Down Resolution</trName>
+		<trDescription>Become a bit better at downhills &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Occurs in the downhill course</trCondition>
+	</skill>
+	<skill>
+		<name>まき直し</name>
+		<trName>Redo</trName>
+		<trDescription>Slightly increases acceleration when behind in Middle Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg and is in placed in the lower half</trCondition>
+	</skill>
+	<skill>
+		<name>差し切り体勢</name>
+		<trName>Between the Lines</trName>
+		<trDescription>Slightly increases acceleration during the Final Leg &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Occurs in the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>乗り換え上手</name>
+		<trName>Switch-up Pro</trName>
+		<trDescription>Increases acceleration in the Final Leg &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly Occurs during the Final Leg if placed in lower 50%</trCondition>
+	</skill>
+	<skill>
+		<name>直線一気</name>
+		<trName>Straight Shot</trName>
+		<trDescription>Slightly increases acceleration on the straight in the Last Spurt &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Occurs during the Last Spurt</trCondition>
+	</skill>
+	<skill>
+		<name>がんばり屋</name>
+		<trName>Hard Worker</trName>
+		<trDescription>Passing becomes slightly easier to succeed &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Occurs when passing other umamusume</trCondition>
+	</skill>
+	<skill>
+		<name>努力家</name>
+		<trName>Laborious</trName>
+		<trDescription>Passing becomes a bit easier to succeed &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Occurs when passing other umamusume</trCondition>
+	</skill>
+	<skill>
+		<name>登山家</name>
+		<trName>Mountain Climber</trName>
+		<trDescription>Become slightly better at uphills</trDescription>
+		<trCondition>Occurs when climbing slope</trCondition>
+	</skill>
+	<skill>
+		<name>直線加速</name>
+		<trName>Straight Accel</trName>
+		<trDescription>Slightly increases acceleration on straights</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>一陣の風</name>
+		<trName>Gust of Wind</trName>
+		<trDescription>Increases acceleration on straights</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>コーナー加速</name>
+		<trName>Corner Accel</trName>
+		<trDescription>Slightly increases acceleration through elegant cornering</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>曲線のソムリエ</name>
+		<trName>Curve Sommelier</trName>
+		<trDescription>Increases acceleration through elegant cornering</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>地固め</name>
+		<trName>Groundwork</trName>
+		<trDescription>Slightly increase acceleration when many skills are activated during the Opening Leg</trDescription>
+		<trCondition>Occurs if more than 3 skills are activated during the Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>垂れウマ回避</name>
+		<trName>Slight Detour</trName>
+		<trDescription>When blocked during Last Spurt, become slightly better at navigating through it</trDescription>
+		<trCondition>Occurs if remaining stamina is more than 1% and gets blocked by an umamusume in front for more than 1 sec during the last spurt</trCondition>
+	</skill>
+	<skill>
+		<name>ノンストップガール</name>
+		<trName>Non-stop Girl</trName>
+		<trDescription>When blocked during Last Spurt, become better at navigating through it</trDescription>
+		<trCondition>Occurs if remaining stamina is more than 1% and gets blocked by an umamusume in front for more than 1 sec during the last spurt</trCondition>
+	</skill>
+	<skill>
+		<name>紅焔ギア/LP1211-M</name>
+		<trName>Red Flame Gear/LP1211-M</trName>
+		<trDescription>Be close to the leader at the final corner to increase your acceleration by changing gears</trDescription>
+		<trCondition>Occurs if placed in or higher than 5th place and is placed in upper 50% during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>ヴィクトリーショット！</name>
+		<trName>Victory Shot!</trName>
+		<trDescription>Be in a good position at the last corner to gain momentum and increase your acceleration</trDescription>
+		<trCondition>Occurs if in or lower than 3rd place and is placed in upper 50% during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>レッツ・アナボリック！</name>
+		<trName>Let's anabolic!</trName>
+		<trDescription>Increase acceleration as you attempt to overtake in last corner</trDescription>
+		<trCondition>Occurs if placed in upper 65~70% in the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>春ウマ娘</name>
+		<trName>Spring Girl</trName>
+		<trDescription>Become better at races in the Spring (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>夏ウマ娘</name>
+		<trName>Summer Girl</trName>
+		<trDescription>Become better at races in the Summer (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>秋ウマ娘</name>
+		<trName>Autumn Girl</trName>
+		<trDescription>Become better at races in the Autumn (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>冬ウマ娘</name>
+		<trName>Winter Girl</trName>
+		<trDescription>Become better at races in the Winter (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>右回り</name>
+		<trName>Right Turns</trName>
+		<trDescription>Become a little better at clockwise tracks (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>左回り</name>
+		<trName>Left Turns</trName>
+		<trDescription>Become better at left counterclockwise tracks (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>外枠得意</name>
+		<trName>Outer Gate Affinity</trName>
+		<trDescription>Become better at races when starting at gate 6-8 (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>伏兵</name>
+		<trName>Underdog</trName>
+		<trDescription>Become better at showing off your ability when 4th favorite or below (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>おひとり様</name>
+		<trName>The One</trName>
+		<trDescription>Showing off your ability becomes easier when no other girls share your strategy (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>一匹狼</name>
+		<trName>Lone Wolf</trName>
+		<trDescription>Raises your abilities a little if you're the only girl with Lone Wolf's Heart (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>シンパシー</name>
+		<trName>Sympathy</trName>
+		<trDescription>Increases ability a little if there are many girls with Sympathetic Heart (Speed)</trDescription>
+	</skill>
+	<skill>
+		<name>東京レース場</name>
+		<trName>Tokyo Racetrack</trName>
+		<trDescription>Become better at Tokyo Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>中山レース場</name>
+		<trName>Nakayama Racetrack</trName>
+		<trDescription>Become better at Nakayama Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>札幌レース場</name>
+		<trName>Sapporo Racetrack</trName>
+		<trDescription>Become better at Sapporo Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>大井レース場</name>
+		<trName>Ooi Racetrack</trName>
+		<trDescription>Become better at Ooi Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>阪神レース場</name>
+		<trName>Hanshin Racetrack</trName>
+		<trDescription>Become better at Hanshin Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>小倉レース場</name>
+		<trName>Kokura Racetrack</trName>
+		<trDescription>Become better at Ogura Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>京都レース場</name>
+		<trName>Kyoto Racetrack</trName>
+		<trDescription>Become better at Kyoto Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>函館レース場</name>
+		<trName>Hakodate Racetrack</trName>
+		<trDescription>Become better at Hakodate Racetrack (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>根幹距離</name>
+		<trName>Core Distance</trName>
+		<trDescription>Become better at Core Distances (Multiples of 400m) (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>非根幹距離</name>
+		<trName>Non-Core Distances</trName>
+		<trDescription>Become better at Non-Core Distances (Not Multiples of 400m) (Stamina)</trDescription>
+	</skill>
+	<skill>
+		<name>道悪</name>
+		<trName>Wicked Path</trName>
+		<trDescription>Become better on Slightly Poor, Poor, and Bad condition tracks (Power)</trDescription>
+	</skill>
+	<skill>
+		<name>良バ場</name>
+		<trName>Track Condition (Good)</trName>
+		<trDescription>Become better on tracks in Good condition (Power)</trDescription>
+	</skill>
+	<skill>
+		<name>対抗意識</name>
+		<trName>Competitive Spirit</trName>
+		<trDescription>Become better at showing off your ability when at least 6 other girls share your strategy (Power)</trDescription>
+	</skill>
+	<skill>
+		<name>ラッキーセブン</name>
+		<trName>Lucky Seven</trName>
+		<trDescription>A little good thing may happen if your starting gate is 7 (스피드, 스태미나, 파워)</trDescription>
+	</skill>
+	<skill>
+		<name>スーパーラッキーセブン</name>
+		<trName>Super Lucky Seven</trName>
+		<trDescription>Good things may happen if your starting gate is 7 (스피드, 스태미나, 파워)</trDescription>
+	</skill>
+	<skill>
+		<name>雨の日</name>
+		<trName>Rainy Day</trName>
+		<trDescription>Become better at races on a Rainy Day (Guts)</trDescription>
+	</skill>
+	<skill>
+		<name>晴れの日</name>
+		<trName>Sunny Days</trName>
+		<trDescription>Become better at races on Sunny Days (Guts)</trDescription>
+	</skill>
+	<skill>
+		<name>曇りの日</name>
+		<trName>Cloudy Days</trName>
+		<trDescription>Become better at races on a Cloudy Day (Guts)</trDescription>
+	</skill>
+	<skill>
+		<name>雪の日</name>
+		<trName>Snowy Days</trName>
+		<trDescription>Become better at races on Snowy Days (Guts)</trDescription>
+	</skill>
+	<skill>
+		<name>徹底マーク</name>
+		<trName>Eyes On You</trName>
+		<trDescription>Become better at showing off your ability when sharing a strategy with the crowd favorite (Guts)</trDescription>
+	</skill>
+	<skill>
+		<name>内枠得意</name>
+		<trName>Inner Gate Affinity</trName>
+		<trDescription>Become better at races when starting at gate 1-3 (Int)</trDescription>
+	</skill>
+	<skill>
+		<name>逃げのコツ</name>
+		<trName>Runner's Tricks</trName>
+		<trDescription>Taking a good position becomes easier &#60;Tactic Runner&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>先行のコツ</name>
+		<trName>Leaders Tricks</trName>
+		<trDescription>Taking a good position becomes easier &#60;Tactic Leader&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>差しのコツ</name>
+		<trName>Betweener's Tricks</trName>
+		<trDescription>Taking a good position becomes easier &#60;Tactic Betweener&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>追込のコツ</name>
+		<trName>Chasers Tricks</trName>
+		<trDescription>Taking a good position becomes easier &#60;Tactic Chaser&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>様子見</name>
+		<trName>Wait and See</trName>
+		<trDescription>Slightly harder to tire when in the back during the Middle Leg &#60;Short Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg and is in placed in the lower half</trCondition>
+	</skill>
+	<skill>
+		<name>展開窺い</name>
+		<trName>Progress Peek</trName>
+		<trDescription>Become slightly harder to tire when in the back of the pack during the Opening Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg and is in placed in the lower half</trCondition>
+	</skill>
+	<skill>
+		<name>慧眼</name>
+		<trName>Wisdom Eye</trName>
+		<trDescription>Become harder to tire when in the back of the pack during the Opening Leg &#60;Mile&#62;</trDescription>
+		<trCondition>Randomly occurs during the Opening Leg and is in placed in the lower half</trCondition>
+	</skill>
+	<skill>
+		<name>前途洋々</name>
+		<trName>Bright Future</trName>
+		<trDescription>Become slightly harder to tire out when in the lead during the Middle Leg &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Random occurs during the Middle Leg and is in the 1st place</trCondition>
+	</skill>
+	<skill>
+		<name>切り開く者</name>
+		<trName>The One Who Clears The Path</trName>
+		<trDescription>Become harder to tire out when in the lead during the Middle Leg &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Random occurs during the Middle Leg and is in the 1st place</trCondition>
+	</skill>
+	<skill>
+		<name>軽やかステップ</name>
+		<trName>Light Step</trName>
+		<trDescription>Become slightly harder to tire out from left-right movements &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Occurs when moving left or right</trCondition>
+	</skill>
+	<skill>
+		<name>神業ステップ</name>
+		<trName>Miracle Step</trName>
+		<trDescription>Become harder to tire out from left-right movements &#60;Medium Distance&#62;</trDescription>
+		<trCondition>Occurs when moving left or right</trCondition>
+	</skill>
+	<skill>
+		<name>深呼吸</name>
+		<trName>Deep Breaths</trName>
+		<trDescription>Take a breath when entering straights and become slightly harder to tire out &#60;Long Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>クールダウン</name>
+		<trName>Cooldown</trName>
+		<trDescription>Take a breath when entering straights and become harder to tire out &#60;Long Distance&#62;</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>パス上手</name>
+		<trName>Pass Expert</trName>
+		<trDescription>Become slightly harder to tire when passing &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when getting close to the umamusume in front</trCondition>
+	</skill>
+	<skill>
+		<name>別腹タンク</name>
+		<trName>Backup Belly</trName>
+		<trDescription>Slightly recovers running willpower after exhausting your strength &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when the stamina runs out</trCondition>
+	</skill>
+	<skill>
+		<name>火事場のバ鹿力</name>
+		<trName>Fight or Flight</trName>
+		<trDescription>Recover the will to run after exhausting your strength &#60;Long Distance&#62;</trDescription>
+		<trCondition>Occurs when the stamina runs out</trCondition>
+	</skill>
+	<skill>
+		<name>勢い任せ</name>
+		<trName>Leave it to vigour!</trName>
+		<trDescription>Become slightly harder to tire out on uphills &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Occurs when climbing slope</trCondition>
+	</skill>
+	<skill>
+		<name>じゃじゃウマ娘</name>
+		<trName>Wild Girl</trName>
+		<trDescription>Become harder to tire out on uphills &#60;Tactic Runner&#62;</trDescription>
+		<trCondition>Occurs when climbing slope</trCondition>
+	</skill>
+	<skill>
+		<name>好位追走</name>
+		<trName>Favorite Place</trName>
+		<trDescription>Become slightly harder to tire during the Middle Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Random occurs during the Middle Leg and is in placed in the upper half</trCondition>
+	</skill>
+	<skill>
+		<name>レースプランナー</name>
+		<trName>Race Planner</trName>
+		<trDescription>Harder to tire during the Middle Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Random occurs during the Middle Leg and is in placed in the upper half</trCondition>
+	</skill>
+	<skill>
+		<name>スタミナキープ</name>
+		<trName>Stamina Keep</trName>
+		<trDescription>Slightly harder to tire out during the Opening Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Random occurs during the Opening Leg and is in placed in the upper half</trCondition>
+	</skill>
+	<skill>
+		<name>余裕綽々</name>
+		<trName>Calm and Composed</trName>
+		<trDescription>Harder to tire out during the Opening Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Random occurs during the Opening Leg and is in placed in the upper half</trCondition>
+	</skill>
+	<skill>
+		<name>栄養補給</name>
+		<trName>Nutritional Supplements</trName>
+		<trDescription>Slightly recover stamina in Middle Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>食いしん坊</name>
+		<trName>Big Eater</trName>
+		<trDescription>Recover stamina in Middle Leg &#60;Tactic Leader&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>小休憩</name>
+		<trName>A Little Break</trName>
+		<trDescription>Slightly recover stamina during the Final Leg &#60;Tactic Betweener&#62;</trDescription>
+		<trCondition>Randomly occurs during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>後方待機</name>
+		<trName>On Standby</trName>
+		<trDescription>Become slightly harder to tire out during the Middle Leg &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Randomly occurs during the Middle Leg and is placed in 25% from the back</trCondition>
+	</skill>
+	<skill>
+		<name>下校の楽しみ</name>
+		<trName>Winding Down</trName>
+		<trDescription>Become slightly harder to tire out on downhills &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Occurs in the downhill course</trCondition>
+	</skill>
+	<skill>
+		<name>下校後のスペシャリスト</name>
+		<trName>After School Specialist</trName>
+		<trDescription>Become harder to tire out on downhills &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Occurs in the downhill course</trCondition>
+	</skill>
+	<skill>
+		<name>冷静</name>
+		<trName>Serene</trName>
+		<trDescription>When front is crowded, slightly calm down remain composed &#60;Tactic Chaser&#62;</trDescription>
+		<trCondition>Occurs when blocked by another umamusume for more than 1 sec</trCondition>
+	</skill>
+	<skill>
+		<name>直線回復</name>
+		<trName>Straight Recovery</trName>
+		<trDescription>Slightly recover stamina on straights</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>好転一息</name>
+		<trName>Breath of Fresh Air</trName>
+		<trDescription>Recover stamina on straights</trDescription>
+		<trCondition>Randomly occurs during the straight course</trCondition>
+	</skill>
+	<skill>
+		<name>コーナー回復</name>
+		<trName>Corner Recovery</trName>
+		<trDescription>Slightly recover stamina through efficient cornering</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>円弧のマエストロ</name>
+		<trName>Arc Maestro</trName>
+		<trDescription>Recover stamina through efficient cornering</trDescription>
+		<trCondition>Randomly occurs during the corner course</trCondition>
+	</skill>
+	<skill>
+		<name>隠れ蓑</name>
+		<trName>Undercover</trName>
+		<trDescription>Remain composed and slightly recover stamina in Opening Leg if front-side is crowded</trDescription>
+		<trCondition>Occurs when blocked by another umamusume for more than 1 sec in Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>鋼の意志</name>
+		<trName>Will of Steel</trName>
+		<trDescription>Remain composed and recover stamina in Opening Leg if front-side is crowded</trDescription>
+		<trCondition>Occurs when blocked by another umamusume for more than 1 sec in Opening Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ふり絞り</name>
+		<trName>Shake It Out</trName>
+		<trDescription>Slightly recover stamina if many skills activate during the Final Leg</trDescription>
+		<trCondition>Occurs when more than 3 skills has been used during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ウマ込み冷静</name>
+		<trName>Crowded Calm</trName>
+		<trDescription>Slightly recover stamina when boxed in during the Middle Leg</trDescription>
+		<trCondition>Occurs when surrounded by umamusumes for more than 1 sec during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>どこ吹く風</name>
+		<trName>Where the Wind Blows</trName>
+		<trDescription>Recover stamina when boxed in during the Middle Leg</trDescription>
+		<trCondition>Occurs when surrounded by umamusumes for more than 1 sec during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>スリーセブン</name>
+		<trName>Triple 7s</trName>
+		<trDescription>Slightly improve mood when the remaining distance is 777m</trDescription>
+		<trCondition>Occurs when the reamining distance is 777m</trCondition>
+	</skill>
+	<skill>
+		<name>ペースキープ</name>
+		<trName>Keep the Pace</trName>
+		<trDescription>Slightly recover stamina when passed in the Middle Leg</trDescription>
+		<trCondition>Occurs when overtaken by another umamusume during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>不屈の心</name>
+		<trName>Indomitable Heart</trName>
+		<trDescription>Recover stamina when passed in the Middle Leg</trDescription>
+		<trCondition>Occurs when overtaken by another umamusume during the Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ピュリティオブハート</name>
+		<trName>Purity of Heart</trName>
+		<trDescription>Be in good position in Middle Leg to recover endurance</trDescription>
+		<trCondition>Occurs when in or less than 2nd place, is placed in the upper 40% and in Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>U=ma2</name>
+		<trName>U=ma2</trName>
+		<trDescription>When being held back on corners of the later half of the race, your endurance recovers</trDescription>
+		<trCondition>Occurs when in or less than 3rd place, is placed in the upper 40% and is in the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>ワクワククライマックス</name>
+		<trName>WakuWaKulimax</trName>
+		<trDescription>When in the back in last corner, restore your endurance when you see another horse girl</trDescription>
+		<trCondition>Occurs when placed in the lower 50%, has another umamusume near and is in the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>後方釘付</name>
+		<trName>Final Nail</trName>
+		<trDescription>When in the front in Opening Leg, girls in the back become lightly weakened (Debuff) &#60;Short Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>スピードイーター</name>
+		<trName>Speed Eater</trName>
+		<trDescription>Slightly steal speed of girls behind you when leading during in Middle Leg (Debuff) &#60;Mile&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>束縛</name>
+		<trName>Binding Chains</trName>
+		<trDescription>Slightly slows down girls in the front if you're behind in Final Leg (Debuff) &#60;Medium Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>独占力</name>
+		<trName>Mono Poisoner</trName>
+		<trDescription>Slows down girls in the front if you're behind in Final Leg (Debuff) &#60;Medium Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>まなざし</name>
+		<trName>Sightlines</trName>
+		<trDescription>Slightly unnerve girls you set your sights on in the Final Leg &#60;Tactic Chaser&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>逃げためらい</name>
+		<trName>Faltering Runners</trName>
+		<trDescription>Instil hesitation and slows down girls with Leg &#60;Strategy・Runner&#62; in the Final Leg</trDescription>
+	</skill>
+	<skill>
+		<name>先行ためらい</name>
+		<trName>Faltering Leaders</trName>
+		<trDescription>Instil hesitation and slows down girls with &#60;Strategy・Leader&#62; in the Final Leg</trDescription>
+	</skill>
+	<skill>
+		<name>差しためらい</name>
+		<trName>Faltering Betweeners</trName>
+		<trDescription>Instil hesitation and slows down girls with &#60;Strategy・Betweener&#62; in the Final Leg</trDescription>
+	</skill>
+	<skill>
+		<name>追込ためらい</name>
+		<trName>Faltering Chasers</trName>
+		<trDescription>Instil hesitation and slows down girls with &#60;Strategy・Chaser&#62; in the Final Leg</trDescription>
+	</skill>
+	<skill>
+		<name>布石</name>
+		<trName>Opener</trName>
+		<trDescription>Slightly slows down girls in the front if you're behind in Opening Leg &#60;Mile&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>リスタート</name>
+		<trName>Restart</trName>
+		<trDescription>When failing to take the lead during the Opening Leg, girls in front will become flustered &#60;Tactic Runner&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>トリック（前)</name>
+		<trName>Trick (Front)</trName>
+		<trDescription>If you're in the front in the Middle Leg, tire out girls that are behind you and distracted</trDescription>
+	</skill>
+	<skill>
+		<name>トリック（後)</name>
+		<trName>Trick (Back)</trName>
+		<trDescription>If you're behind in the Middle Leg, tire out girls that are in the front and distracted</trDescription>
+	</skill>
+	<skill>
+		<name>抜け駆け禁止</name>
+		<trName>No Running Allowed</trName>
+		<trDescription>When behind in Opening Leg, slightly panic girls in the front &#60;Short Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>ささやき</name>
+		<trName>A Gentle Whisper</trName>
+		<trDescription>Slightly confuses the girl right in front of you in Middle Leg &#60;Medium Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>魅惑のささやき</name>
+		<trName>A Charming Whisper</trName>
+		<trDescription>Confuses the girl right in front of you in Middle Leg &#60;Medium Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>スタミナイーター</name>
+		<trName>Stamina Eater</trName>
+		<trDescription>Slightly steal stamina of girls in the front when behind in Middle Leg &#60;Long Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>鋭い眼光</name>
+		<trName>Sharp Gaze</trName>
+		<trDescription>Slightly flusters other girls during in Final Leg &#60;Tactic Betweener&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>八方にらみ</name>
+		<trName>Watching All Directions</trName>
+		<trDescription>Flusters other girls in Final Leg &#60;Tactic Betweener&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>逃げけん制</name>
+		<trName>Runners Restraint</trName>
+		<trDescription>Restrain and slightly tire out girls with &#60;Strategy・Runner&#62; in the Opening Leg</trDescription>
+	</skill>
+	<skill>
+		<name>先行けん制</name>
+		<trName>Leaders Restraint</trName>
+		<trDescription>Restrain and slightly tire out girls with &#60;Strategy・Leader&#62; in the Opening Leg</trDescription>
+	</skill>
+	<skill>
+		<name>差しけん制</name>
+		<trName>Betweeners Restraint</trName>
+		<trDescription>Restrain and slightly tire out girls with &#60;Strategy・Betweener&#62; in the Opening Leg</trDescription>
+	</skill>
+	<skill>
+		<name>追込けん制</name>
+		<trName>Chasers Restraint</trName>
+		<trDescription>Restrain and slightly tire out girls with &#60;Strategy・Chaser&#62; in the Opening Leg</trDescription>
+	</skill>
+	<skill>
+		<name>逃げ焦り</name>
+		<trName>Panicked Runners</trName>
+		<trDescription>Panic and slightly tire out girls with &#60;Strategy・Runner&#62; in Middle Leg</trDescription>
+	</skill>
+	<skill>
+		<name>先行焦り</name>
+		<trName>Panicked Leaders</trName>
+		<trDescription>Panic and slightly tire out girls with &#60;Strategy・Leader&#62; in the Middle Leg</trDescription>
+	</skill>
+	<skill>
+		<name>差し焦り</name>
+		<trName>Panicked Betweener</trName>
+		<trDescription>Panic and slightly tire out girls with &#60;Strategy・Betweener&#62; in Middle Leg</trDescription>
+	</skill>
+	<skill>
+		<name>追込焦り</name>
+		<trName>Panicked Chasers</trName>
+		<trDescription>Panic and slightly tire out girls with &#60;Strategy・Chaser&#62; in Middle Leg</trDescription>
+	</skill>
+	<skill>
+		<name>逃げ駆け引き</name>
+		<trName>Frantic Runners</trName>
+		<trDescription>When girls with &#60;Strategy・Runner&#62; become frantic, they take longer to calm down</trDescription>
+	</skill>
+	<skill>
+		<name>先行駆け引き</name>
+		<trName>Frantic Leaders</trName>
+		<trDescription>When girls with &#60;Strategy・Leader&#62; become frantic, they take longer to calm down</trDescription>
+	</skill>
+	<skill>
+		<name>差し駆け引き</name>
+		<trName>Frantic Betweeners</trName>
+		<trDescription>When girls with &#60;Strategy・Betweener&#62; become frantic, they take longer to calm down</trDescription>
+	</skill>
+	<skill>
+		<name>追込駆け引き</name>
+		<trName>Frantic Chasers</trName>
+		<trDescription>When girls with &#60;Strategy・Chaser&#62; become frantic, they take longer to calm down</trDescription>
+	</skill>
+	<skill>
+		<name>目くらまし</name>
+		<trName>Smoke Screen</trName>
+		<trDescription>Lightly narrows the field of vision of girls in the front in Final Leg &#60;Long Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>奇術師</name>
+		<trName>Conjurer</trName>
+		<trDescription>Narrows the field of vision of girls in the front in Final Leg &#60;Long Distance&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>かく乱</name>
+		<trName>Derangement</trName>
+		<trDescription>Slightly narrows the field of view of girls in the back when in Front in Final Leg &#60;Tactic Leader&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>幻惑のかく乱</name>
+		<trName>Glamorous Perturbation</trName>
+		<trDescription>Lightly narrows the field of vision of girls in the back when in front in Final Leg &#60;Tactic Leader&#62;</trDescription>
+	</skill>
+	<skill>
+		<name>#LookatCurren</name>
+		<trName>#LookatCurren</trName>
+		<trDescription>Gain momentum while in a good position when passing someone in the Middle Leg</trDescription>
+	</skill>
+	<skill>
+		<name>アガッてきた!</name>
+		<trName>Now I'm Pumped!</trName>
+		<trDescription>Increases speed when passing during the Middle Leg</trDescription>
+	</skill>
+	<skill>
+		<name>波乱注意砲！</name>
+		<trName>Warning Shot!</trName>
+		<trDescription>From the middle of the race slightly increase your speed by running a long spurt</trDescription>
+		<trCondition>Occurs when the remaining distance is 40~50% and is placed in lower than 50%</trCondition>
+	</skill>
+	<skill>
+		<name>アクセルX</name>
+		<trName>Accelerator X</trName>
+		<trDescription>Increase speed and power lightly when close to the lead in last 200m</trDescription>
+		<trCondition>Occurs when the remaining distance is less than 200m, is in or less than 3rd place, is placed in upper 50% and the distance with the umamusume in front and back is less than 1 bashin</trCondition>
+	</skill>
+	<skill>
+		<name>レッドエース</name>
+		<trName>Red Ace</trName>
+		<trDescription>Be in the lead during the 2nd half of the race to gain slightly more power to help you stay in 1st place</trDescription>
+		<trCondition>Occurs when in the lead and the distance with the umamusume behind is less than 1 bashin during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>精神一到</name>
+		<trName>Desire to win</trName>
+		<trDescription>Lightly increase speed when passing in the back in Final Leg straight</trDescription>
+		<trCondition>Occurs when passing other umamusume while placed in or less than 4th place during the Final Straight Course</trCondition>
+	</skill>
+	<skill>
+		<name>熱血☆アミーゴ</name>
+		<trName>Hot Blooded ☆ Amigo</trName>
+		<trDescription>Slightly easier to keep advantage if you have enough strength in the Final Leg straight</trDescription>
+		<trCondition>Occurs when placed in or higher than 2nd place and remaining stamina is more than 30% during the Final Straight Course</trCondition>
+	</skill>
+	<skill>
+		<name>エンプレス・プライド</name>
+		<trName>Empress・Pride</trName>
+		<trDescription>Lightly increase speed when passing in the back in last corner</trDescription>
+		<trCondition>Occurs when passing other umamusume and placed in or less than 4th place during the final corner</trCondition>
+	</skill>
+	<skill>
+		<name>勝利のキッス☆</name>
+		<trName>Victory Kiss ☆</trName>
+		<trDescription>Slightly easier to break away when competing in the last corner</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and gets surrounded by other umamusumes for more than 2 seconds during the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>クリアハート</name>
+		<trName>Clear Heart</trName>
+		<trDescription>Be in a good position during the middle stage of the race to lightly recover your endurance</trDescription>
+		<trCondition>Occurs when in or less than 2nd place, is placed in the upper 40% and in Middle Leg</trCondition>
+	</skill>
+	<skill>
+		<name>燃えろ筋肉！</name>
+		<trName>Burning Muscles!</trName>
+		<trDescription>Gain a slight increase in acceleration as you attempt to gain positions during the last corner of the race</trDescription>
+		<trCondition>Occurs if placed in upper 65~70% in the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>introduction:My body</name>
+		<trName>introduction:My body</trName>
+		<trDescription>Lightly recover stamina in the second half of the race by holding yourself back during corners</trDescription>
+		<trCondition>Occurs when in or less than 3rd place, is placed in the upper 40% and is in the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>全力Vサインッ！</name>
+		<trName>Full Power for V</trName>
+		<trDescription>On the final straight your desire not to lose, increases your speed lightly</trDescription>
+		<trCondition>Occurs when placed in or higher than 5th place and gets surround by other umamusumes for more than 2 seconds during the Final Straight Lane</trCondition>
+	</skill>
+	<skill>
+		<name>学級委員長＋速さ＝バクシン</name>
+		<trName>Class President + Speed = Bakushin</trName>
+		<trDescription>While fighting for the lead during the second part of the race, lightly increase your speed through displaying your Bakushin power</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and gets srrounded by other umamusumes for more than 2 seconds during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>ワクワクよーいドン</name>
+		<trName>Ready, Steady, Go!</trName>
+		<trDescription>Being at the back during the last corner, lightly restores your endurance when you see another horse girl</trDescription>
+		<trCondition>Occurs when placed in the lower 50%, has another umamusume near and is in the Final Corner</trCondition>
+	</skill>
+	<skill>
+		<name>来てください来てください！</name>
+		<trName>Come, Come!</trName>
+		<trDescription>If during the last leg of the race your way to the front of the field is blocked, your power of divination will make it lightly easier to spot an opening</trDescription>
+		<trCondition>Occurs when placed in or less than 3rd place and gets blocked by the umamusume in front during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>アタシもたまには、ね？</name>
+		<trName>You know, sometimes even I can…</trName>
+		<trDescription>When you're in 3rd place at the end of the race and about to lose, you gain a little bit more fighting spirit and lightly increase your speed</trDescription>
+		<trCondition>Occurs when placed in or higher than 3rd place and the distance with the umamusume behind is less than 1 bashin during the Final Leg</trCondition>
+	</skill>
+	<skill>
+		<name>Call me KING</name>
+		<trName>Call me KING</trName>
+		<trDescription>If you can get calm and composed through the race, you will be able to showcase your ability and increase your speed for the last 200m</trDescription>
+		<trCondition>Occurs when 掛かり never occurred during the race, is placed in or less than 5th place, is in upper 60 and the remaining distance less than 200m</trCondition>
+	</skill>
+	<skill>
+		<name>Nemesis</name>
+		<trName>Nemesis</trName>
+		<trDescription>Increase speed in the last corner when coming up from the back of the pack</trDescription>
+		<trCondition>Occurs when passing other umamusume during the Final Corner while being placed in upper 50~75%</trCondition>
+	</skill>
+</skillList>

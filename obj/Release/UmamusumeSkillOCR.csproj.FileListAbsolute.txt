@@ -1,0 +1,17 @@
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\config.json
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\bannedText.xml
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\UmamusumeSkillOCR.exe.config
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\UmamusumeSkillOCR.exe
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\UmamusumeSkillOCR.pdb
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\Newtonsoft.Json.dll
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\System.Drawing.Common.dll
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.bitmapPreview.resources
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.MainForm.resources
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.Properties.Resources.resources
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.csproj.GenerateResource.cache
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.csproj.CoreCompileInputs.cache
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.csproj.CopyComplete
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.exe
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Release\UmamusumeSkillOCR.pdb
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\Skill List\skillInfoKr.xml
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Release\Skill List\skillInfoEn.xml
