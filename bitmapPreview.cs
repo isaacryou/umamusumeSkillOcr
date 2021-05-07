@@ -12,9 +12,13 @@ namespace UmamusumeSkillOCR
 {
     public partial class bitmapPreview : Form
     {
+        private Bitmap gamePreviewBitmap;
+
         public bitmapPreview(Bitmap gameBitmap)
         {
             InitializeComponent();
+
+            gamePreviewBitmap = gameBitmap;
 
             populateInterface(gameBitmap);
         }
@@ -35,6 +39,11 @@ namespace UmamusumeSkillOCR
         private void bitmapPreview_Load(object sender, EventArgs e)
         {
             
+        }
+
+        void bitmapPreview_Closing(object sender, CancelEventArgs e)
+        {
+            gamePreviewBitmap.Dispose();
         }
     }
 }
