@@ -25,10 +25,7 @@ namespace UmamusumeSkillOCR
         private List<skillInfo> allSkills;
         private List<String> allBannedTexts;
 
-        private Rectangle gameWindowRect;
-
         private Bitmap activeGameBitmap;
-        private Bitmap previewGameBitmap;
         private String windowTitle;
 
         private Config programConfig;
@@ -115,19 +112,25 @@ namespace UmamusumeSkillOCR
 
                 skillListTextBox.Text = skillFinder.getAllDetectedSkillList(extractedTextLines, allSkills, allBannedTexts);
             }
+
+            disposeBitmaps();
+        }
+
+        private void disposeBitmaps()
+        {
+            if (activeGameBitmap != null)
+            {
+                activeGameBitmap.Dispose();
+            }
         }
 
         public void getActiveGameWindow()
         {
             IntPtr handler = WindowsUtilities.GetActiveWindowHandler();
-
+            var targetTitle = WindowsUtilities.GetWindowTitle(handler)?.Trim();
             Rectangle rect = WindowsUtilities.GetWindowArea(handler);
 
-            var targetTitle = WindowsUtilities.GetWindowTitle(handler)?.Trim();
-
             windowTitle = targetTitle;
-
-            Bitmap bitmap;
 
             if (targetTitle == programConfig.gameTitle)
             {
@@ -137,31 +140,11 @@ namespace UmamusumeSkillOCR
 
             if (gameWindowX != -1 && gameWindowY != -1)
             {
-                rect.X = gameWindowX + programConfig.screenX;
-
-                rect.Width = programConfig.screenWidth;
-
-                rect.Y = gameWindowY + programConfig.screenY;
-
-                rect.Height = programConfig.screenHeight;
-
-                using (bitmap = new Bitmap(rect.Width, rect.Height))
+                using(Bitmap bitmap = WindowsUtilities.GetActiveGameBitmap(gameWindowX, gameWindowY, programConfig))
                 {
-                    using (Graphics g = Graphics.FromImage(bitmap))
-                    {
-                        if (g != null)
-                        {
-                            g.CopyFromScreen(new System.Drawing.Point(rect.Left, rect.Top), System.Drawing.Point.Empty, rect.Size);
-                        }
-                    }
-
-                    gameWindowRect = rect;
-
                     System.Drawing.Size newSize = new System.Drawing.Size((bitmap.Width * 3), (bitmap.Height * 3));
-                    Bitmap enhancedBitmap = new Bitmap(bitmap, newSize);
-                    Bitmap originalBitmap = new Bitmap(bitmap, bitmap.Size);
 
-                    previewGameBitmap = originalBitmap;
+                    Bitmap enhancedBitmap = new Bitmap(bitmap, newSize);
                     activeGameBitmap = enhancedBitmap;
                 }
             }
@@ -176,20 +159,6 @@ namespace UmamusumeSkillOCR
         {;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Bitmap newBitmap = (Bitmap)Image.FromFile("D:\\5대 잉여파일\\게임\\말딸\\croppedImage.jpg");
-        }
-
-        private void getWindowsRect()
-        {
-            IntPtr handler = WindowsUtilities.GetActiveWindowHandler();
-
-            var targetTitle = WindowsUtilities.GetWindowTitle(handler)?.Trim();
-
-            Rectangle rect = WindowsUtilities.GetWindowArea(handler);
-        }
-
         private void skillListTextBox_TextChanged(object sender, EventArgs e)
         {
 
@@ -202,6 +171,8 @@ namespace UmamusumeSkillOCR
 
         private void previewScreenButton_Click(object sender, EventArgs e)
         {
+            Bitmap previewGameBitmap = WindowsUtilities.GetActiveGameBitmap(gameWindowX, gameWindowY, programConfig);
+
             if (previewGameBitmap != null)
             {
                 bitmapPreview preview = new bitmapPreview(previewGameBitmap);
@@ -263,6 +234,7 @@ namespace UmamusumeSkillOCR
         {
             programConfig.language = languageBox.Text;
             allSkills = skillFinder.getAllSkills(programConfig);
+            programConfig.saveProgramConfig();
         }
     }
 }

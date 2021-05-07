@@ -60,6 +60,40 @@ namespace UmamusumeSkillOCR
             };
         }
 
-        
+        public static Bitmap GetActiveGameBitmap(int gameWindowX, int gameWindowY, Config programConfig)
+        {
+            IntPtr handler = GetActiveWindowHandler();
+
+            Rectangle rect = GetWindowArea(handler);
+
+            var targetTitle = GetWindowTitle(handler)?.Trim();
+
+            Bitmap bitmap;
+
+            if (gameWindowX != -1 && gameWindowY != -1)
+            {
+                rect.X = gameWindowX + programConfig.screenX;
+
+                rect.Width = programConfig.screenWidth;
+
+                rect.Y = gameWindowY + programConfig.screenY;
+
+                rect.Height = programConfig.screenHeight;
+
+                bitmap = new Bitmap(rect.Width, rect.Height);
+
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    if (g != null)
+                    {
+                        g.CopyFromScreen(new System.Drawing.Point(rect.Left, rect.Top), System.Drawing.Point.Empty, rect.Size);
+                    }
+                }
+
+                return bitmap;
+            }
+
+            return null;
+        }
     }
 }

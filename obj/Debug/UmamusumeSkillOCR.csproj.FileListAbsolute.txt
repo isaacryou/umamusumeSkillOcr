@@ -15,3 +15,4 @@ C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Debug\Umamus
 C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Debug\config.json
 C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Debug\Skill List\skillInfoKr.xml
 C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\bin\Debug\Skill List\skillInfoEn.xml
+C:\Users\shine\source\repos\UmamusumeSkillOCR\UmamusumeSkillOCR\obj\Debug\UmamusumeSkillOCR.csprojAssemblyReference.cache
