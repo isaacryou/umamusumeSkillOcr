@@ -182,31 +182,35 @@ namespace UmamusumeSkillOCR
 
         private void screenXTextEdit_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(screenXTextEdit.Text))
+            string numberOnlyXText = WindowsUtilities.GetNumberOnlyString(screenXTextEdit.Text);
+
+            if (!String.IsNullOrEmpty(numberOnlyXText))
             {
-                programConfig.screenX = int.Parse(screenXTextEdit.Text);
+                programConfig.screenX = int.Parse(numberOnlyXText);
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
-            
         }
 
         private void screenYTextEdit_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(screenYTextEdit.Text))
+            string numberOnlyYText = WindowsUtilities.GetNumberOnlyString(screenYTextEdit.Text);
+
+            if (!String.IsNullOrEmpty(numberOnlyYText))
             {
-                programConfig.screenY = int.Parse(screenYTextEdit.Text);
+                programConfig.screenY = int.Parse(numberOnlyYText);
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
-                
         }
 
         private void screenWidthTextEdit_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(screenWidthTextEdit.Text))
+            string numberOnlyWidthText = WindowsUtilities.GetNumberOnlyString(screenWidthTextEdit.Text);
+
+            if (!String.IsNullOrEmpty(numberOnlyWidthText))
             {
-                programConfig.screenWidth = int.Parse(screenWidthTextEdit.Text);
+                programConfig.screenWidth = int.Parse(numberOnlyWidthText);
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
@@ -215,13 +219,35 @@ namespace UmamusumeSkillOCR
 
         private void screenHeightTextEdit_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(screenHeightTextEdit.Text))
+            string numberOnlyHeightText = WindowsUtilities.GetNumberOnlyString(screenHeightTextEdit.Text);
+
+            if (!String.IsNullOrEmpty(numberOnlyHeightText))
             {
-                programConfig.screenHeight = int.Parse(screenHeightTextEdit.Text);
+                programConfig.screenHeight = int.Parse(numberOnlyHeightText);
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
                 
+        }
+
+        private void screenXTextEdit_LostFocus(object sender, EventArgs e)
+        {
+            screenXTextEdit.Text = WindowsUtilities.GetNumberOnlyString(screenXTextEdit.Text);
+        }
+
+        private void screenYTextEdit_LostFocus(object sender, EventArgs e)
+        {
+            screenYTextEdit.Text = WindowsUtilities.GetNumberOnlyString(screenYTextEdit.Text);
+        }
+
+        private void screenWidthTextEdit_LostFocus(object sender, EventArgs e)
+        {
+            screenWidthTextEdit.Text = WindowsUtilities.GetNumberOnlyString(screenWidthTextEdit.Text);
+        }
+
+        private void screenHeightTextEdit_LostFocus(object sender, EventArgs e)
+        {
+            screenHeightTextEdit.Text = WindowsUtilities.GetNumberOnlyString(screenHeightTextEdit.Text);
         }
 
         private void loadConfigButton_Click(object sender, EventArgs e)

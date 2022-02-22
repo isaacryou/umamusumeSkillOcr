@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shine\\source\\repos\\UmamusumeSkillOCR\\UmamusumeSkillOCR\\UmamusumeSkillOCR.csproj": {}
+    "D:\\Development\\umamusumeSkillOcr\\UmamusumeSkillOCR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shine\\source\\repos\\UmamusumeSkillOCR\\UmamusumeSkillOCR\\UmamusumeSkillOCR.csproj": {
+    "D:\\Development\\umamusumeSkillOcr\\UmamusumeSkillOCR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shine\\source\\repos\\UmamusumeSkillOCR\\UmamusumeSkillOCR\\UmamusumeSkillOCR.csproj",
+        "projectUniqueName": "D:\\Development\\umamusumeSkillOcr\\UmamusumeSkillOCR.csproj",
         "projectName": "UmamusumeSkillOCR",
-        "projectPath": "C:\\Users\\shine\\source\\repos\\UmamusumeSkillOCR\\UmamusumeSkillOCR\\UmamusumeSkillOCR.csproj",
+        "projectPath": "D:\\Development\\umamusumeSkillOcr\\UmamusumeSkillOCR.csproj",
         "packagesPath": "C:\\Users\\shine\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shine\\source\\repos\\UmamusumeSkillOCR\\UmamusumeSkillOCR\\obj\\",
+        "outputPath": "D:\\Development\\umamusumeSkillOcr\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

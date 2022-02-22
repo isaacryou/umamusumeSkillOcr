@@ -95,5 +95,10 @@ namespace UmamusumeSkillOCR
 
             return null;
         }
+
+        public static string GetNumberOnlyString(string originalText)
+        {
+            return new string(originalText.Where(char.IsDigit).ToArray());
+        }
     }
 }

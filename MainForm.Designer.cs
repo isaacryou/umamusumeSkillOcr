@@ -119,6 +119,7 @@ namespace UmamusumeSkillOCR
             this.screenXTextEdit.Size = new System.Drawing.Size(121, 20);
             this.screenXTextEdit.TabIndex = 20;
             this.screenXTextEdit.TextChanged += new System.EventHandler(this.screenXTextEdit_TextChanged);
+            this.screenXTextEdit.LostFocus += new System.EventHandler(this.screenXTextEdit_LostFocus);
             // 
             // screenYTextEdit
             // 
@@ -127,6 +128,7 @@ namespace UmamusumeSkillOCR
             this.screenYTextEdit.Size = new System.Drawing.Size(121, 20);
             this.screenYTextEdit.TabIndex = 21;
             this.screenYTextEdit.TextChanged += new System.EventHandler(this.screenYTextEdit_TextChanged);
+            this.screenYTextEdit.LostFocus += new System.EventHandler(this.screenYTextEdit_LostFocus);
             // 
             // screenWidthTextEdit
             // 
@@ -135,6 +137,7 @@ namespace UmamusumeSkillOCR
             this.screenWidthTextEdit.Size = new System.Drawing.Size(121, 20);
             this.screenWidthTextEdit.TabIndex = 22;
             this.screenWidthTextEdit.TextChanged += new System.EventHandler(this.screenWidthTextEdit_TextChanged);
+            this.screenWidthTextEdit.LostFocus += new System.EventHandler(this.screenWidthTextEdit_LostFocus);
             // 
             // screenHeightTextEdit
             // 
@@ -143,6 +146,7 @@ namespace UmamusumeSkillOCR
             this.screenHeightTextEdit.Size = new System.Drawing.Size(121, 20);
             this.screenHeightTextEdit.TabIndex = 23;
             this.screenHeightTextEdit.TextChanged += new System.EventHandler(this.screenHeightTextEdit_TextChanged);
+            this.screenHeightTextEdit.LostFocus += new System.EventHandler(this.screenHeightTextEdit_LostFocus);
             // 
             // configText
             // 

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Line of codes to perform OCR
+ * Uses Windows OCR tool to perform OCR
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,9 +48,5 @@ namespace UmamusumeSkillOCR
             
             return text.ToString();
         }
-
-        
-
-        
     }
 }

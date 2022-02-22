@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Load config files as the first step when the program is ran
+ * Name of the config file must be config with extension json and placed in the 
+ * same location as the executable file.
+ * 
+ * If there is no config file, the program will create a new one with default values.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +36,10 @@ namespace UmamusumeSkillOCR
         public int screenHeight { get; set; }
         public string gameTitle { get; set; }
 
+        /*
+         * If there already is a config file, use it
+         * If not, create a new config file with default values
+         */
         public static Config loadProgramConfig()
         {
             Config loadProgramConfig;
