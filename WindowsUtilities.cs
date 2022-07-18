@@ -68,17 +68,47 @@ namespace UmamusumeSkillOCR
 
             var targetTitle = GetWindowTitle(handler)?.Trim();
 
+            int screenX;
+            int screenY;
+            int screenWidth;
+            int screenHeight;
+
+            if (programConfig.translatorMode)
+            {
+                if (programConfig.translatorChoiceMode)
+                {
+                    screenX = programConfig.translatorChoiceScreenX;
+                    screenY = programConfig.translatorChoiceScreenY;
+                    screenWidth = programConfig.translatorChoiceScreenWidth;
+                    screenHeight = programConfig.translatorChoiceScreenHeight;
+                }
+                else
+                {
+                    screenX = programConfig.translatorScreenX;
+                    screenY = programConfig.translatorScreenY;
+                    screenWidth = programConfig.translatorScreenWidth;
+                    screenHeight = programConfig.translatorScreenHeight;
+                }
+            }
+            else
+            {
+                screenX = programConfig.screenX;
+                screenY = programConfig.screenY;
+                screenWidth = programConfig.screenWidth;
+                screenHeight = programConfig.screenHeight;
+            }
+
             Bitmap bitmap;
 
             if (gameWindowX != -1 && gameWindowY != -1)
             {
-                rect.X = gameWindowX + programConfig.screenX;
+                rect.X = gameWindowX + screenX;
 
-                rect.Width = programConfig.screenWidth;
+                rect.Width = screenWidth;
 
-                rect.Y = gameWindowY + programConfig.screenY;
+                rect.Y = gameWindowY + screenY;
 
-                rect.Height = programConfig.screenHeight;
+                rect.Height = screenHeight;
 
                 bitmap = new Bitmap(rect.Width, rect.Height);
 

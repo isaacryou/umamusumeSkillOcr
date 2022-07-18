@@ -44,6 +44,11 @@ namespace UmamusumeSkillOCR
             this.skillListTextBox = new System.Windows.Forms.TextBox();
             this.windowStatusText = new System.Windows.Forms.TextBox();
             this.loadConfigButton = new System.Windows.Forms.Button();
+            this.translatorCheckBox = new System.Windows.Forms.CheckBox();
+            this.buttonTranslate = new System.Windows.Forms.Button();
+            this.textBoxOcr = new System.Windows.Forms.TextBox();
+            this.textBoxTranslation = new System.Windows.Forms.TextBox();
+            this.checkBoxChoiceMode = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // languageBox
@@ -68,9 +73,9 @@ namespace UmamusumeSkillOCR
             // 
             // previewScreenButton
             // 
-            this.previewScreenButton.Location = new System.Drawing.Point(443, 145);
+            this.previewScreenButton.Location = new System.Drawing.Point(397, 145);
             this.previewScreenButton.Name = "previewScreenButton";
-            this.previewScreenButton.Size = new System.Drawing.Size(75, 23);
+            this.previewScreenButton.Size = new System.Drawing.Size(121, 23);
             this.previewScreenButton.TabIndex = 15;
             this.previewScreenButton.Text = "Preview";
             this.previewScreenButton.UseVisualStyleBackColor = true;
@@ -184,11 +189,68 @@ namespace UmamusumeSkillOCR
             this.loadConfigButton.UseVisualStyleBackColor = true;
             this.loadConfigButton.Click += new System.EventHandler(this.loadConfigButton_Click);
             // 
+            // translatorCheckBox
+            // 
+            this.translatorCheckBox.AutoSize = true;
+            this.translatorCheckBox.Location = new System.Drawing.Point(397, 52);
+            this.translatorCheckBox.Name = "translatorCheckBox";
+            this.translatorCheckBox.Size = new System.Drawing.Size(102, 17);
+            this.translatorCheckBox.TabIndex = 27;
+            this.translatorCheckBox.Text = "Translator mode";
+            this.translatorCheckBox.UseVisualStyleBackColor = true;
+            this.translatorCheckBox.CheckedChanged += new System.EventHandler(this.translatorCheckBox_CheckedChanged);
+            // 
+            // buttonTranslate
+            // 
+            this.buttonTranslate.Location = new System.Drawing.Point(148, 146);
+            this.buttonTranslate.Name = "buttonTranslate";
+            this.buttonTranslate.Size = new System.Drawing.Size(120, 23);
+            this.buttonTranslate.TabIndex = 29;
+            this.buttonTranslate.Text = "Translate";
+            this.buttonTranslate.UseVisualStyleBackColor = true;
+            this.buttonTranslate.Click += new System.EventHandler(this.buttonTranslate_Click);
+            // 
+            // textBoxOcr
+            // 
+            this.textBoxOcr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxOcr.Location = new System.Drawing.Point(24, 187);
+            this.textBoxOcr.Multiline = true;
+            this.textBoxOcr.Name = "textBoxOcr";
+            this.textBoxOcr.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxOcr.Size = new System.Drawing.Size(494, 107);
+            this.textBoxOcr.TabIndex = 30;
+            // 
+            // textBoxTranslation
+            // 
+            this.textBoxTranslation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTranslation.Location = new System.Drawing.Point(24, 312);
+            this.textBoxTranslation.Multiline = true;
+            this.textBoxTranslation.Name = "textBoxTranslation";
+            this.textBoxTranslation.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTranslation.Size = new System.Drawing.Size(494, 111);
+            this.textBoxTranslation.TabIndex = 31;
+            // 
+            // checkBoxChoiceMode
+            // 
+            this.checkBoxChoiceMode.AutoSize = true;
+            this.checkBoxChoiceMode.Location = new System.Drawing.Point(53, 149);
+            this.checkBoxChoiceMode.Name = "checkBoxChoiceMode";
+            this.checkBoxChoiceMode.Size = new System.Drawing.Size(89, 17);
+            this.checkBoxChoiceMode.TabIndex = 32;
+            this.checkBoxChoiceMode.Text = "Choice Mode";
+            this.checkBoxChoiceMode.UseVisualStyleBackColor = true;
+            this.checkBoxChoiceMode.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(538, 450);
+            this.Controls.Add(this.checkBoxChoiceMode);
+            this.Controls.Add(this.textBoxTranslation);
+            this.Controls.Add(this.textBoxOcr);
+            this.Controls.Add(this.buttonTranslate);
+            this.Controls.Add(this.translatorCheckBox);
             this.Controls.Add(this.loadConfigButton);
             this.Controls.Add(this.windowStatusText);
             this.Controls.Add(this.configText);
@@ -227,6 +289,11 @@ namespace UmamusumeSkillOCR
         private System.Windows.Forms.TextBox skillListTextBox;
         private System.Windows.Forms.TextBox windowStatusText;
         private System.Windows.Forms.Button loadConfigButton;
+        private System.Windows.Forms.CheckBox translatorCheckBox;
+        private System.Windows.Forms.Button buttonTranslate;
+        private System.Windows.Forms.TextBox textBoxOcr;
+        private System.Windows.Forms.TextBox textBoxTranslation;
+        private System.Windows.Forms.CheckBox checkBoxChoiceMode;
     }
 }
 

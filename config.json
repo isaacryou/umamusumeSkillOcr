@@ -1,8 +1,13 @@
 {
-  "gameTitle": "BlueStacks",
+  "gameTitle": "umamusume",
   "language": "English",
   "screenX": 10,
   "screenY": 344,
   "screenWidth": 445,
-  "screenHeight": 440
+  "screenHeight": 440,
+  "translatorMode": false,
+  "translatorScreenX": 200,
+  "translatorScreenY": 100,
+  "translatorScreenWidth": 100,
+  "translatorScreenHeight": 100
 }

@@ -17,13 +17,13 @@ using System.Text.RegularExpressions;
 
 namespace UmamusumeSkillOCR
 {
-
     public partial class MainForm : Form
     {
         private OCR skillOcr;
         private UmamusumeSkill skillFinder;
         private List<skillInfo> allSkills;
         private List<String> allBannedTexts;
+        private Translator ocrTranslator;
 
         private Bitmap activeGameBitmap;
         private String windowTitle;
@@ -46,6 +46,8 @@ namespace UmamusumeSkillOCR
             skillFinder = new UmamusumeSkill();
             loadConfig();
 
+            ocrTranslator = new Translator(programConfig.translationApiKey);
+
             populateInterface();
 
             allSkills = skillFinder.getAllSkills(programConfig);
@@ -66,11 +68,51 @@ namespace UmamusumeSkillOCR
             screenYTextEdit.Enabled = false;
             screenHeightTextEdit.Enabled = false;
             screenWidthTextEdit.Enabled = false;
+            checkBoxChoiceMode.Checked = false;
 
-            screenXTextEdit.Text = programConfig.screenX.ToString();
-            screenYTextEdit.Text = programConfig.screenY.ToString();
-            screenWidthTextEdit.Text = programConfig.screenWidth.ToString();
-            screenHeightTextEdit.Text = programConfig.screenHeight.ToString();
+            if (programConfig.translatorMode)
+            {
+                translatorCheckBox.Checked = true;
+                languageBox.Enabled = false;
+                buttonTranslate.Enabled = true;
+                skillListTextBox.Visible = false;
+                textBoxOcr.Visible = true;
+                textBoxTranslation.Visible = true;
+                checkBoxChoiceMode.Enabled = true;
+
+                if (programConfig.translatorChoiceMode)
+                {
+                    checkBoxChoiceMode.Checked = true;
+
+                    screenXTextEdit.Text = programConfig.translatorChoiceScreenX.ToString();
+                    screenYTextEdit.Text = programConfig.translatorChoiceScreenY.ToString();
+                    screenHeightTextEdit.Text = programConfig.translatorChoiceScreenHeight.ToString();
+                    screenWidthTextEdit.Text = programConfig.translatorChoiceScreenWidth.ToString();
+                }
+                else
+                {
+                    screenXTextEdit.Text = programConfig.translatorScreenX.ToString();
+                    screenYTextEdit.Text = programConfig.translatorScreenY.ToString();
+                    screenHeightTextEdit.Text = programConfig.translatorScreenHeight.ToString();
+                    screenWidthTextEdit.Text = programConfig.translatorScreenWidth.ToString();
+                }
+
+                
+            }
+            else
+            {
+                translatorCheckBox.Checked = false;
+                languageBox.Enabled = true;
+                buttonTranslate.Enabled = false;
+                skillListTextBox.Visible = true;
+                textBoxOcr.Visible = false;
+                textBoxTranslation.Visible = false;
+                checkBoxChoiceMode.Enabled = false;
+                screenXTextEdit.Text = programConfig.screenX.ToString();
+                screenYTextEdit.Text = programConfig.screenY.ToString();
+                screenHeightTextEdit.Text = programConfig.screenHeight.ToString();
+                screenWidthTextEdit.Text = programConfig.screenWidth.ToString();
+            }
 
             foreach (var language in skillFinder.languageList)
             {
@@ -105,12 +147,20 @@ namespace UmamusumeSkillOCR
 
                 String extractedText = await skillOcr.ExtractTextAsync(activeGameBitmap);
 
-                List<String> extractedTextLines = extractedText.Split(
-                    new[] { Environment.NewLine },
-                    StringSplitOptions.None
-                ).ToList();
+                if (!programConfig.translatorMode)
+                {
+                    List<String> extractedTextLines = extractedText.Split(
+                        new[] { Environment.NewLine },
+                        StringSplitOptions.None
+                    ).ToList();
 
-                skillListTextBox.Text = skillFinder.getAllDetectedSkillList(extractedTextLines, allSkills, allBannedTexts);
+                    skillListTextBox.Text = skillFinder.getAllDetectedSkillList(extractedTextLines, allSkills, allBannedTexts);
+                }
+                else
+                {
+                    String stringWithoutSpace = ocrTranslator.removeAllSpaceAndNewLine(extractedText);
+                    textBoxOcr.Text = stringWithoutSpace;
+                }
             }
 
             disposeBitmaps();
@@ -186,7 +236,22 @@ namespace UmamusumeSkillOCR
 
             if (!String.IsNullOrEmpty(numberOnlyXText))
             {
-                programConfig.screenX = int.Parse(numberOnlyXText);
+                if (programConfig.translatorMode)
+                {
+                    if(programConfig.translatorChoiceMode)
+                    {
+                        programConfig.translatorChoiceScreenX = int.Parse(numberOnlyXText);
+                    }
+                    else
+                    {
+                        programConfig.translatorScreenX = int.Parse(numberOnlyXText);
+                    }
+                }
+                else
+                {
+                    programConfig.screenX = int.Parse(numberOnlyXText);
+                }
+
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
@@ -198,7 +263,24 @@ namespace UmamusumeSkillOCR
 
             if (!String.IsNullOrEmpty(numberOnlyYText))
             {
-                programConfig.screenY = int.Parse(numberOnlyYText);
+                if (programConfig.translatorMode)
+                {
+                    if (programConfig.translatorChoiceMode)
+                    {
+                        programConfig.translatorChoiceScreenY = int.Parse(numberOnlyYText);
+                    }
+                    else
+                    {
+                        programConfig.translatorScreenY = int.Parse(numberOnlyYText);
+                    }
+
+                    
+                }
+                else
+                {
+                    programConfig.screenY = int.Parse(numberOnlyYText);
+                }
+                
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
@@ -210,7 +292,24 @@ namespace UmamusumeSkillOCR
 
             if (!String.IsNullOrEmpty(numberOnlyWidthText))
             {
-                programConfig.screenWidth = int.Parse(numberOnlyWidthText);
+                if (programConfig.translatorMode)
+                {
+                    if (programConfig.translatorChoiceMode)
+                    {
+                        programConfig.translatorChoiceScreenWidth = int.Parse(numberOnlyWidthText);
+                    }
+                    else
+                    {
+                        programConfig.translatorScreenWidth = int.Parse(numberOnlyWidthText);
+                    }
+                    
+                }
+                else
+                {
+                    programConfig.screenWidth = int.Parse(numberOnlyWidthText);
+                }
+
+                
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
@@ -223,7 +322,23 @@ namespace UmamusumeSkillOCR
 
             if (!String.IsNullOrEmpty(numberOnlyHeightText))
             {
-                programConfig.screenHeight = int.Parse(numberOnlyHeightText);
+                if (programConfig.translatorMode)
+                {
+                    if (programConfig.translatorChoiceMode)
+                    {
+                        programConfig.translatorChoiceScreenHeight = int.Parse(numberOnlyHeightText);
+                    }
+                    else
+                    {
+                        programConfig.translatorScreenHeight = int.Parse(numberOnlyHeightText);
+                    }
+                    
+                }
+                else
+                {
+                    programConfig.screenHeight = int.Parse(numberOnlyHeightText);
+                }
+
                 getActiveGameWindow();
                 programConfig.saveProgramConfig();
             }
@@ -260,6 +375,109 @@ namespace UmamusumeSkillOCR
         {
             programConfig.language = languageBox.Text;
             allSkills = skillFinder.getAllSkills(programConfig);
+            programConfig.saveProgramConfig();
+        }
+
+        private void translatorCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            programConfig.translatorMode = translatorCheckBox.Checked;
+
+            if (programConfig.translatorMode)
+            {
+                if (programConfig.translatorChoiceMode)
+                {
+                    screenXTextEdit.Text = programConfig.translatorChoiceScreenX.ToString();
+                    screenYTextEdit.Text = programConfig.translatorChoiceScreenY.ToString();
+                    screenHeightTextEdit.Text = programConfig.translatorChoiceScreenHeight.ToString();
+                    screenWidthTextEdit.Text = programConfig.translatorChoiceScreenWidth.ToString();
+                }
+                else
+                {
+                    screenXTextEdit.Text = programConfig.translatorScreenX.ToString();
+                    screenYTextEdit.Text = programConfig.translatorScreenY.ToString();
+                    screenHeightTextEdit.Text = programConfig.translatorScreenHeight.ToString();
+                    screenWidthTextEdit.Text = programConfig.translatorScreenWidth.ToString();
+                }
+
+                languageBox.Enabled = false;
+                buttonTranslate.Enabled = true;
+                skillListTextBox.Visible = false;
+                textBoxOcr.Visible = true;
+                textBoxTranslation.Visible = true;
+                checkBoxChoiceMode.Enabled = true;
+            }
+            else
+            {
+                screenXTextEdit.Text = programConfig.screenX.ToString();
+                screenYTextEdit.Text = programConfig.screenY.ToString();
+                screenHeightTextEdit.Text = programConfig.screenHeight.ToString();
+                screenWidthTextEdit.Text = programConfig.screenWidth.ToString();
+
+                languageBox.Enabled = true;
+                buttonTranslate.Enabled = false;
+                skillListTextBox.Visible = true;
+                textBoxOcr.Visible = false;
+                textBoxTranslation.Visible = false;
+                checkBoxChoiceMode.Enabled = false;
+            }
+
+            programConfig.saveProgramConfig();
+        }
+
+        private void buttonTranslate_Click(object sender, EventArgs e)
+        {
+            String translatedText = ocrTranslator.getTranslatedText(textBoxOcr.Text, programConfig.language);
+
+            textBoxTranslation.Text = translatedText;
+        }
+
+        private void buttonCaptureScreen_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            programConfig.translatorChoiceMode = checkBoxChoiceMode.Checked;
+
+            if (programConfig.translatorMode)
+            {
+                if (programConfig.translatorChoiceMode)
+                {
+                    screenXTextEdit.Text = programConfig.translatorChoiceScreenX.ToString();
+                    screenYTextEdit.Text = programConfig.translatorChoiceScreenY.ToString();
+                    screenHeightTextEdit.Text = programConfig.translatorChoiceScreenHeight.ToString();
+                    screenWidthTextEdit.Text = programConfig.translatorChoiceScreenWidth.ToString();
+                }
+                else
+                {
+                    screenXTextEdit.Text = programConfig.translatorScreenX.ToString();
+                    screenYTextEdit.Text = programConfig.translatorScreenY.ToString();
+                    screenHeightTextEdit.Text = programConfig.translatorScreenHeight.ToString();
+                    screenWidthTextEdit.Text = programConfig.translatorScreenWidth.ToString();
+                }
+
+                languageBox.Enabled = false;
+                buttonTranslate.Enabled = true;
+                skillListTextBox.Visible = false;
+                textBoxOcr.Visible = true;
+                textBoxTranslation.Visible = true;
+                checkBoxChoiceMode.Enabled = true;
+            }
+            else
+            {
+                screenXTextEdit.Text = programConfig.screenX.ToString();
+                screenYTextEdit.Text = programConfig.screenY.ToString();
+                screenHeightTextEdit.Text = programConfig.screenHeight.ToString();
+                screenWidthTextEdit.Text = programConfig.screenWidth.ToString();
+
+                languageBox.Enabled = true;
+                buttonTranslate.Enabled = false;
+                skillListTextBox.Visible = true;
+                textBoxOcr.Visible = false;
+                textBoxTranslation.Visible = false;
+                checkBoxChoiceMode.Enabled = false;
+            }
+
             programConfig.saveProgramConfig();
         }
     }
